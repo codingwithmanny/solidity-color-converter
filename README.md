@@ -1,7 +1,21 @@
 # Solidity Color Converter
 
 This is a library that helps convert colors to hexadecimal, decimal, and / or rgb.
+We created this because we had a hard time finding resources and / or libraries that converted colors in the format that we needed them in with solidity.
+
 This has a limitted amount of functions to try and keep the size small.
+
+## Authors
+
+Just two devs trying to figure out colors in solidity.
+
+**@codingwithmanny**
+  - [medium.com/@codingwithmanny](https://codingwithmanny.medium.com)
+  - [twitter.com/codingwithmanny](https://twitter.com/codingwithmanny)
+  - [instagram.com/codingwithmanny](https://instagram.com/codingwithmanny)
+  
+**@mannynarang**
+  - [patreon.com/mannynarang](https://www.patreon.com/mannynarang)
 
 ## Credit
 
@@ -73,4 +87,28 @@ main()
     console.error(error);
     process.exit(1);
   });
+```
+
+## Using Functions
+
+Different functions, how to use them, and their outputs.
+
+### How To Convert Hex Color To Decimal
+
+```
+ColorConverter.hexToUint("E1C699"); // Returns: 14796441
+```
+
+### How To Convert Decimal To Hex Color
+
+```
+ColorConverter.uintToHex(14796441); // Returns: "E1C699"
+```
+
+### Get Red, Green, Blue RGB Values 0-255
+
+```
+ColorConverter.uintToRGBRed(14796441); // Returns: 225
+ColorConverter.uintToRGBGreen(14796441); // Returns: 198
+ColorConverter.uintToRGBBlue(14796441); // Returns: 153
 ```

@@ -3,7 +3,7 @@
 pragma solidity ^0.8.4;
 
 /// @title ColorConverter
-/// @author @codingwithmanny
+/// @author @codingwithmanny & @mannynarang
 /// @notice Provides multiple functions for converting colors to different formats
 library ColorConverter {
     // Constants
